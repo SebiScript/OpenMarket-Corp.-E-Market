@@ -36,7 +36,7 @@ Requirement 2.1 demands an agile UI where the customer does not experience exces
 **Justification:**  
 Requirements 1.5 and 2.5 mandate accurate inventory tracking and require immediate stock confirmation upon a sale.
 
----
+
 
 ## Other Considered
 
@@ -45,7 +45,7 @@ Requirements 1.5 and 2.5 mandate accurate inventory tracking and require immedia
 | Name | Text |
 | Name | Text |
 
----
+
 
 ## Implicit Characteristics
 
@@ -60,7 +60,7 @@ Given the "frequent updates" and "multiple suppliers", the system must be able t
 ### Testability
 When handling third-party payments and complex inventories, critical components must be easily subjected to automated testing. There must be unit tests covering edge cases, integration tests (to isolate communication with gateways and carriers), and E2E tests (to validate the entire checkout flow).
 
----
+
 
 # 2. Select the Architectural Style
 
@@ -72,7 +72,6 @@ Your task is to choose the macro-structure of the system based on the characteri
 - Complete the **Architecture Styles Worksheet** comparing styles (Monolith vs Microservices vs Event-Driven).
 - Write **ADR-002-estilo-arq.md**, arguing the final choice and acknowledging the accepted trade-offs.
 
----
 
 ## Architecture Styles Worksheet
 
@@ -84,7 +83,7 @@ To determine the most appropriate architectural structure for OpenMarket Corp E-
 | Microservices Architecture | Independent scalability, fault isolation, continuous deployment capability, service autonomy. | Increased operational complexity and infrastructure management. | Strong alignment with Elasticity, Availability, and Security. |
 | Event-Driven Architecture | Loose coupling, asynchronous communication, high responsiveness. | Complex debugging and data consistency challenges. | Good alignment with Extensibility and Responsiveness but higher implementation complexity. |
 
----
+
 
 ## Architectural Style Selection
 
@@ -104,7 +103,7 @@ A microservices architecture enables:
 
 Event-driven communication will be used as a complementary approach for asynchronous processes such as notifications, inventory updates, and post-payment operations.
 
----
+
 
 ## ADR-002 — Architecture Decision Record
 
@@ -141,7 +140,7 @@ We will adopt a **Microservices Architecture** as the primary structural style, 
 - **Pure Event-Driven Architecture:** Data consistency and debugging complexity issues.
 - **Microkernel Architecture:** Explicitly excluded due to scalability constraints.
 
----
+
 
 # 3. Architectural Representation (C4 Model)
 
@@ -162,7 +161,7 @@ We will adopt a **Microservices Architecture** as the primary structural style, 
 - Event Outbox Component.
 - Auth Guard.
 
----
+
 
 # 4. Code Repository
 
@@ -183,7 +182,7 @@ The Payment Service component is used as the central orchestrator.
 | ITransactionRepo | saveTransaction() | Database persistence |
 | IEventOutbox | queueEvent() | Asynchronous messaging |
 
----
+
 
 # 6. Distance from the Main Sequence
 
