@@ -1,7 +1,7 @@
 # OpenMarket-Corp.-E-Market1.
 
 # 1. Identify Architecture Characteristics
-
+![alt text](image.png)
 ## TOP 3 Driving Characteristics
 
 ### Elasticity
