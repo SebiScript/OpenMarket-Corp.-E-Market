@@ -1,4 +1,4 @@
-# ADR-002: Adoption of Microservices and Event-Driven Architecture
+# ADR-003: Adoption of Microservices and Event-Driven Architecture
 
 ## Status
 
