@@ -1,8 +1,5 @@
 # Project Summary: OpenMarket Corp. E-Market Platform
 
-**Team:** Jalasoft Jala-U GA SE G3  
-**Review Date:** February 25, 2026
-
 ## 1. Architecture Characteristics
 <img width="983" height="537" alt="image" src="https://github.com/user-attachments/assets/4be2d9cc-6620-4fa5-9acc-68f0071e2292" />
 The system was designed by prioritizing three fundamental characteristics (“Top 3 Driving Characteristics”) to support a high-traffic e-commerce environment:
